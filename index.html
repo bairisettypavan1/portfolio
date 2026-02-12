@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi, I'm Pavan! A curious mind who loves building things with code and AI.">
+    <title>Pavan — Developer & Problem Solver</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Noise Texture Overlay -->
+    <div class="noise"></div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursor-dot"></div>
+
+    <!-- Theme Toggle (floating) -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="toggle-icon">🌙</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#home" class="nav-logo">P.</a>
+        <div class="nav-links">
+            <a href="#story">Story</a>
+            <a href="#craft">Craft</a>
+            <a href="#work">Work</a>
+            <a href="#connect">Say Hi</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-wave">Hey there! 👋</p>
+            <h1 class="hero-title">
+                I'm <span class="name-highlight">Pavan</span>,<br>
+                <span class="title-small">a curious soul who turns</span><br>
+                <em class="title-accent">ideas into reality</em>
+            </h1>
+            <p class="hero-intro">
+                Recently graduated, currently exploring the beautiful intersection of
+                <strong>code</strong>, <strong>AI</strong>, and <strong>creativity</strong>.
+                I've solved 800+ coding puzzles (yes, I find that fun!) and I'm always
+                building something new.
+            </p>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="hero-doodle">
+            <svg viewBox="0 0 200 200" class="blob">
+                <path fill="currentColor"
+                    d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.1C64.8,55,53.9,66.3,40.7,74.1C27.5,81.9,13.8,86.2,-1.1,87.9C-16,89.6,-32,88.7,-45.5,82.1C-59,75.5,-70,63.2,-77.2,49.1C-84.4,35,-87.8,19,-87.8,3C-87.8,-13,-84.4,-29,-76.6,-42.2C-68.8,-55.4,-56.6,-65.7,-43,-73.1C-29.4,-80.5,-14.7,-84.9,0.5,-85.7C15.7,-86.6,31.4,-83.8,44.7,-76.4Z"
+                    transform="translate(100 100)" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="story-container">
+            <div class="story-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">My Story</h2>
+            </div>
+
+            <div class="story-content">
+                <div class="story-text">
+                    <p class="story-lead">
+                        It all started with a simple question: <em>"How does this work?"</em>
+                    </p>
+                    <p>
+                        That curiosity led me down the rabbit hole of computer science, where I discovered
+                        the joy of creating things from scratch. From writing my first "Hello World" to
+                        building AI systems that actually <em>think</em> — it's been quite a journey.
+                    </p>
+                    <p>
+                        I'm not just about writing code. I believe in building things that matter,
+                        solving problems that need solving, and always, <em>always</em> learning something new.
+                    </p>
+                    <p class="story-quote">
+                        "The best way to predict the future is to create it."
+                        <span class="quote-author">— My daily reminder</span>
+                    </p>
+                </div>
+
+                <div class="story-facts">
+                    <div class="fact">
+                        <span class="fact-number">800+</span>
+                        <span class="fact-label">Problems solved<br><small>(and enjoyed every one)</small></span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-number">∞</span>
+                        <span class="fact-label">Cups of chai<br><small>(the real fuel)</small></span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-number">24/7</span>
+                        <span class="fact-label">Curious mode<br><small>(always learning)</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craft Section (Skills) -->
+    <section class="craft" id="craft">
+        <div class="craft-container">
+            <div class="craft-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">My Craft</h2>
+                <p class="section-subtitle">Things I love working with</p>
+            </div>
+
+            <div class="craft-grid">
+                <div class="craft-card" data-category="brain">
+                    <div class="card-icon">🧠</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Teaching machines to see, understand, and learn. It's like magic, but with math.</p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="craft-card" data-category="code">
+                    <div class="card-icon">💻</div>
+                    <h3>Full-Stack Development</h3>
+                    <p>From databases to beautiful interfaces — I enjoy building the whole thing.</p>
+                    <div class="card-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="craft-card" data-category="puzzle">
+                    <div class="card-icon">🧩</div>
+                    <h3>Problem Solving</h3>
+                    <p>800+ problems solved across platforms. Puzzles are my happy place.</p>
+                    <div class="card-tags">
+                        <span>DSA</span>
+                        <span>Algorithms</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="craft-card" data-category="tools">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Tools & Automation</h3>
+                    <p>If it can be automated, I'm probably already building it.</p>
+                    <div class="card-tags">
+                        <span>Git</span>
+                        <span>AWS</span>
+                        <span>Web Scraping</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="craft-marquee">
+                <div class="marquee-content">
+                    <span>Python</span>
+                    <span>•</span>
+                    <span>JavaScript</span>
+                    <span>•</span>
+                    <span>Java</span>
+                    <span>•</span>
+                    <span>C++</span>
+                    <span>•</span>
+                    <span>React</span>
+                    <span>•</span>
+                    <span>Machine Learning</span>
+                    <span>•</span>
+                    <span>Deep Learning</span>
+                    <span>•</span>
+                    <span>Computer Vision</span>
+                    <span>•</span>
+                    <span>SQL</span>
+                    <span>•</span>
+                    <span>Git</span>
+                    <span>•</span>
+                    <span>AWS</span>
+                    <span>•</span>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                    <span>Python</span>
+                    <span>•</span>
+                    <span>JavaScript</span>
+                    <span>•</span>
+                    <span>Java</span>
+                    <span>•</span>
+                    <span>C++</span>
+                    <span>•</span>
+                    <span>React</span>
+                    <span>•</span>
+                    <span>Machine Learning</span>
+                    <span>•</span>
+                    <span>Deep Learning</span>
+                    <span>•</span>
+                    <span>Computer Vision</span>
+                    <span>•</span>
+                    <span>SQL</span>
+                    <span>•</span>
+                    <span>Git</span>
+                    <span>•</span>
+                    <span>AWS</span>
+                    <span>•</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section (Projects) -->
+    <section class="work" id="work">
+        <div class="work-container">
+            <div class="work-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Selected Work</h2>
+                <p class="section-subtitle">Projects I'm proud of</p>
+            </div>
+
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="project-visual job-agent">
+                            <div class="visual-content">
+                                <span class="emoji">🔍</span>
+                                <div class="pulse-rings">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI + Automation</span>
+                        <h3 class="project-title">Job Search Agent</h3>
+                        <p class="project-desc">
+                            An AI-powered assistant that hunts for jobs while you sleep.
+                            Scrapes 1800+ listings, uses Gemini AI to match them to your skills,
+                            and sends you only the good ones. <em>Built out of necessity during
+                                my own job search!</em>
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini AI</span>
+                            <span>Web Scraping</span>
+                        </div>
+                        <a href="https://github.com/bairisettypavan1/job_search_agent" target="_blank" rel="noopener"
+                            class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reverse" data-project="2">
+                    <div class="project-image">
+                        <div class="project-visual object-detect">
+                            <div class="visual-content">
+                                <span class="emoji">👁️</span>
+                                <div class="scan-line"></div>
+                                <div class="detection-box box-1"></div>
+                                <div class="detection-box box-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Computer Vision</span>
+                        <h3 class="project-title">Object Detection System</h3>
+                        <p class="project-desc">
+                            Teaching computers to see. Built using SSD300 and Inception V3
+                            architectures for real-time object detection. It's fascinating
+                            how a bunch of matrices can recognize a cat from a dog!
+                        </p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>SSD300</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener"
+                            class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="work-cta">
+                <p>Want to see more? Check out my</p>
+                <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="github-link">
+                    GitHub Profile
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="connect" id="connect">
+        <div class="connect-container">
+            <div class="connect-content">
+                <span class="section-number">04</span>
+                <h2 class="connect-title">Let's Create<br>Something Together</h2>
+                <p class="connect-text">
+                    Whether you have a project idea, a job opportunity, or just want to
+                    chat about AI and code over chai — I'd love to hear from you!
+                </p>
+
+                <div class="connect-links">
+                    <a href="mailto:bairisettypavan@gmail.com" class="connect-link primary">
+                        <span class="link-icon">✉️</span>
+                        <span class="link-text">
+                            <span class="link-label">Drop me an email</span>
+                            <span class="link-value">bairisettypavan@gmail.com</span>
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="connect-link">
+                        <span class="link-icon">🐙</span>
+                        <span class="link-text">
+                            <span class="link-label">See my code</span>
+                            <span class="link-value">github.com/bairisettypavan1</span>
+                        </span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/bairisettypavan" target="_blank" rel="noopener"
+                        class="connect-link">
+                        <span class="link-icon">💼</span>
+                        <span class="link-text">
+                            <span class="link-label">Connect professionally</span>
+                            <span class="link-value">LinkedIn</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="connect-visual">
+                <div class="handshake">🤝</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                Designed & built with lots of ☕ by <strong>Pavan</strong>
+            </p>
+            <p class="footer-year">© 2024</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
